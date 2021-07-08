@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"hex_add","path":"scripts/hex_add/hex_add.yy",},"order":2,},
     {"id":{"name":"layout_create","path":"scripts/layout_create/layout_create.yy",},"order":9,},
+    {"id":{"name":"find_hex_at_point","path":"scripts/find_hex_at_point/find_hex_at_point.yy",},"order":12,},
     {"id":{"name":"Mouse","path":"objects/Mouse/Mouse.yy",},"order":3,},
     {"id":{"name":"hex_distance","path":"scripts/hex_distance/hex_distance.yy",},"order":5,},
     {"id":{"name":"point_to_hex","path":"scripts/point_to_hex/point_to_hex.yy",},"order":11,},
