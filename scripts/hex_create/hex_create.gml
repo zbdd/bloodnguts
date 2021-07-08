@@ -5,8 +5,8 @@ function hex_create(q,r,s,size){
 	var list = ds_list_create()
 	var center = instance_create_layer(q,r,"Hexes",Point)
 	var point = flat_hex_to_pixel(q,r,s,size)
-	center.x = point.x
-	center.y = point.y
+	center.x = point.x + global.Layout.offset_x
+	center.y = point.y + global.Layout.offset_y
 	var hex = instance_create_layer(center.x, center.y,"Hexes",Hex)
 	hex.q = q
 	hex.r = r
