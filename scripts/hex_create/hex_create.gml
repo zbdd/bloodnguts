@@ -1,13 +1,14 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yyoyogames.com/hc/en-us/articles/360005277377 for more information
-function hex_create(q,r,s,size){
+function hex_create(layout, q,r,s,size){
 	
 	var list = ds_list_create()
 	var center = instance_create_layer(q,r,"Hexes",Point)
 	var point = flat_hex_to_pixel(q,r,s,size)
-	center.x = point.x + global.Layout.offset_x
-	center.y = point.y + global.Layout.offset_y
+	center.x = point.x + layout.offset_x
+	center.y = point.y + layout.offset_y
 	var hex = instance_create_layer(center.x, center.y,"Hexes",Hex)
+	hex.default_colour = layout.colour
 	hex.q = q
 	hex.r = r
 	hex.s = s

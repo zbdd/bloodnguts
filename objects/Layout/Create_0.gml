@@ -9,4 +9,5 @@ offset_x = x
 offset_y = y
 layout = ds_map_create()
 runOnce = true
+colour = c_white
 
