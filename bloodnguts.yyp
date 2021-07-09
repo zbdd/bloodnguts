@@ -8,7 +8,6 @@
     {"id":{"name":"Mouse","path":"objects/Mouse/Mouse.yy",},"order":3,},
     {"id":{"name":"move_to_hex","path":"scripts/move_to_hex/move_to_hex.yy",},"order":13,},
     {"id":{"name":"hex_distance","path":"scripts/hex_distance/hex_distance.yy",},"order":5,},
-    {"id":{"name":"point_to_hex","path":"scripts/point_to_hex/point_to_hex.yy",},"order":11,},
     {"id":{"name":"hex_length","path":"scripts/hex_length/hex_length.yy",},"order":6,},
     {"id":{"name":"flat_hex_to_pixel","path":"scripts/flat_hex_to_pixel/flat_hex_to_pixel.yy",},"order":10,},
     {"id":{"name":"SpawnFirst","path":"objects/SpawnFirst/SpawnFirst.yy",},"order":4,},
