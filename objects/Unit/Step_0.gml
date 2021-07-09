@@ -25,9 +25,7 @@ if (selected) {
 			//show_debug_message("Point: " + string(x)+","+string(y))
 			valid_hex = find_hex_at_point()
 			if (valid_hex) {
-				with (valid_hex) { colour = c_green }
-				highlight_hexes_from_origin(valid_hex,other.move_max)
-				
+					highlight_hexes_from_origin(valid_hex,other.move_max)
 			}
 		}
 	}
