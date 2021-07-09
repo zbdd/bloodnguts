@@ -9,6 +9,7 @@ function hex_create(layout, q,r,s,size){
 	center.y = point.y + layout.offset_y
 	var hex = instance_create_layer(center.x, center.y,layout.layer,Hex)
 	hex.default_colour = layout.colour
+	hex.layout = layout
 	hex.q = q
 	hex.r = r
 	hex.s = s
