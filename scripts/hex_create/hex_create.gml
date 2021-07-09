@@ -3,11 +3,11 @@
 function hex_create(layout, q,r,s,size){
 	
 	var list = ds_list_create()
-	var center = instance_create_layer(q,r,"Hexes",Point)
+	var center = instance_create_layer(q,r,layout.layer,Point)
 	var point = flat_hex_to_pixel(q,r,s,size)
 	center.x = point.x + layout.offset_x
 	center.y = point.y + layout.offset_y
-	var hex = instance_create_layer(center.x, center.y,"Hexes",Hex)
+	var hex = instance_create_layer(center.x, center.y,layout.layer,Hex)
 	hex.default_colour = layout.colour
 	hex.q = q
 	hex.r = r
@@ -20,6 +20,7 @@ function hex_create(layout, q,r,s,size){
 		ds_list_add(list, corner)
 	}
 	
+	with (center) { instance_destroy() }
 	hex.list = list
 	
 	return hex

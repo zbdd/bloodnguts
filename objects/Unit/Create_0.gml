@@ -4,6 +4,6 @@ q = 0
 r = 0
 start_x = x
 start_y = y
-move_layout = noone
+move_point = noone
 selected = false
 moved = false
