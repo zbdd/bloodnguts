@@ -9,6 +9,10 @@ if (!selected && moved) {
 			move_to_hex(self,valid_hex)
 			moved = false
 			return
+		} else if (state == "deploy") {
+			move_to_hex(self,valid_hex)
+			moved = false
+			return	
 		}
 	x = start_x
 	y = start_y

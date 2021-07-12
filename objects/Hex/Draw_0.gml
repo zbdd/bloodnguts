@@ -13,3 +13,5 @@ for(var xx=0; xx<ds_list_size(list)-1;xx++){
 	draw_text(list[| 2].x, y,"("+string(q)+","+string(r)+","+string(s)+")")
 }
 colour = default_colour
+
+if(ds_list_size(items_on_hex)>0) draw_text(x,y-size/2,string(ds_list_size(items_on_hex)))

@@ -9,3 +9,4 @@ moved = false
 move_max = 1
 image_speed = 0
 image_index = 2
+state = "deploy"
