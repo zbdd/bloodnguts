@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "Terrain",
-    "path": "sprites/Terrain/Terrain.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "HumanSprite",
-    "path": "sprites/HumanSprite/HumanSprite.yy",
+    "name": "Building_Sprite",
+    "path": "sprites/Building_Sprite/Building_Sprite.yy",
   },
   "solid": false,
   "visible": true,
