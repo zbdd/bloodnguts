@@ -5,8 +5,8 @@ function init_battle(player_1){
 	cell_w = room_width/16
 	cell_h = room_height/16
 	
-	for(var xx=0;xx<ds_list_size(player_1.units_to_deploy);xx++) {
-		var unit = player_1.units_to_deploy[| xx]
+	for(var xx=0;xx<ds_list_size(player_1.units);xx++) {
+		var unit = player_1.units[| xx]
 		unit.x = cell_w * 1.3
 		unit.y = cell_h * (2.5 + xx)
 	}

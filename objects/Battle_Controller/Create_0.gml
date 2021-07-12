@@ -12,3 +12,4 @@ end_deployment.text = "End Deployment"
 player_1 = noone
 player_2 = noone
 turn = 0
+new_turn = false

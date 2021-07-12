@@ -11,3 +11,5 @@ image_speed = 0
 image_index = 2
 state = "none"
 player = noone
+valid_hex = noone
+orig_hex = hex

@@ -6,4 +6,10 @@ draw_set_colour(c_blue)
 draw_rectangle(cell_w*1,cell_h*1,cell_w*3,cell_h*8,true)
 draw_text(cell_w*1.1,cell_h*1.1,"Player One")
 draw_text(cell_w*1.1,cell_h*1.4,"Deploy your forces")
-draw_text(cell_w*1.1,cell_h*1.7,"Units left: " + string(ds_list_size(units_to_deploy)))
+
+var deploy = 0
+for(var xx=0;xx<ds_list_size(units);xx++) {
+	var unit = units[| xx]
+	if (unit.state == "deploy") deploy++
+	draw_text(cell_w*1.1,cell_h*1.7,"Units left: " + string(deploy))
+}

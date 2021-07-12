@@ -5,5 +5,5 @@ function create_unit(player){
 	unit.player = player
 	show_debug_message(string(unit))
 
-	ds_list_add(player.units_to_deploy, unit)
+	ds_list_add(player.units, unit)
 }
