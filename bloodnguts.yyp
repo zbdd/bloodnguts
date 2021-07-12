@@ -14,6 +14,7 @@
     {"id":{"name":"hex_length","path":"scripts/hex_length/hex_length.yy",},"order":6,},
     {"id":{"name":"flat_hex_to_pixel","path":"scripts/flat_hex_to_pixel/flat_hex_to_pixel.yy",},"order":10,},
     {"id":{"name":"SpawnFirst","path":"objects/SpawnFirst/SpawnFirst.yy",},"order":4,},
+    {"id":{"name":"create_unit","path":"scripts/create_unit/create_unit.yy",},"order":19,},
     {"id":{"name":"highlight_hexes_from_origin","path":"scripts/highlight_hexes_from_origin/highlight_hexes_from_origin.yy",},"order":15,},
     {"id":{"name":"create_layout","path":"scripts/create_layout/create_layout.yy",},"order":14,},
     {"id":{"name":"Point","path":"objects/Point/Point.yy",},"order":0,},

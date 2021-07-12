@@ -2,10 +2,8 @@
 // You can write your code in this editor
 player_1 = instance_create_layer(0,0,"Units",Player)
 
-unit_1 = instance_create_layer(0,0,"Units",Unit)
-unit_2 = instance_create_layer(0,0,"Units",Unit)
-ds_list_add(player_1.units_to_deploy, unit_1)
-ds_list_add(player_1.units_to_deploy, unit_2)
+unit_1 = create_unit(player_1)
+unit_2 = create_unit(player_1)
 
 init_battle(player_1)
 

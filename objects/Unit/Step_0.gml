@@ -12,6 +12,8 @@ if (!selected && moved) {
 		} else if (state == "deploy") {
 			move_to_hex(self,valid_hex)
 			moved = false
+			state = "waiting"
+			ds_list_delete(player.units_to_deploy,ds_list_find_index(player.units_to_deploy,self.id))
 			return	
 		}
 	x = start_x
