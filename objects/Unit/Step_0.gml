@@ -11,7 +11,6 @@ if (!selected && moved) {
 		} else if (state == "deploy") {
 			move_to_hex(self,valid_hex)
 			moved = false
-			state = "waiting"
 			return	
 		}
 	x = start_x
@@ -25,6 +24,6 @@ else {
 	start_x = x
 	start_y = y
 	with (move_point) { instance_destroy() }
-	//if (valid_hex) orig_hex = valid_hex
+	
 	if (state != "can_move") orig_hex = find_hex_at_point()
 }

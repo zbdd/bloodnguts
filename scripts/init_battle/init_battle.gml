@@ -9,6 +9,9 @@ function init_battle(player_1){
 		var unit = player_1.units[| xx]
 		unit.x = cell_w * 1.3
 		unit.y = cell_h * (2.5 + xx)
+		unit.start_x = unit.x
+		unit.start_y = unit.y
+		
 	}
 	
 	battle_controller = instance_create_layer(0,0,"Buttons",Battle_Controller)
