@@ -4,6 +4,7 @@
 
 
 player_1 = instance_create_layer(0,0,"Units",Player)
+player_2 = instance_create_layer(0,0,"Units",Player)
 
 unit_1 = create_unit(player_1)
 unit_2 = create_unit(player_1)

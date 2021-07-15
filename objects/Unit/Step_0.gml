@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+image_blend = player.colour
+
 if (!selected && moved) {
 	valid_hex = find_hex_at_point()
 
