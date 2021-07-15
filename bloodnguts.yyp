@@ -5,6 +5,7 @@
     {"id":{"name":"layout_create","path":"scripts/layout_create/layout_create.yy",},"order":9,},
     {"id":{"name":"find_hex_at_point","path":"scripts/find_hex_at_point/find_hex_at_point.yy",},"order":12,},
     {"id":{"name":"create_point","path":"scripts/create_point/create_point.yy",},"order":16,},
+    {"id":{"name":"get_random_hex","path":"scripts/get_random_hex/get_random_hex.yy",},"order":20,},
     {"id":{"name":"init_battle","path":"scripts/init_battle/init_battle.yy",},"order":18,},
     {"id":{"name":"HumanSprite","path":"sprites/HumanSprite/HumanSprite.yy",},"order":0,},
     {"id":{"name":"Mouse","path":"objects/Mouse/Mouse.yy",},"order":3,},
@@ -75,7 +76,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.560",
+    "IDEVersion": "2.3.3.570",
   },
   "resourceVersion": "1.4",
   "name": "bloodnguts",
