@@ -17,7 +17,15 @@ if (mouse_check_button_released(mb_left) && instance_position(mouse_x,mouse_y,se
 	moving = false
 	
 	next_hex = find_hex_at_point()
-	if (hex_distance(hex,next_hex) <= move_max) move_to_hex(self,next_hex)
+	if (next_hex) {
+		if (hex_distance(hex,next_hex) <= move_max 
+			&& can_move
+			&& hex != next_hex) {
+			move_to_hex(self,next_hex)
+			can_move = false
+		}
+		else move_to_hex(self,hex)
+	}
 	else move_to_hex(self,hex)
 }
 
