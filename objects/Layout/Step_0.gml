@@ -6,6 +6,13 @@ if (runOnce) {
 			var s = -qq-rr
 			if (s>=-size&&s<=size) {
 				hex = hex_create(self,qq,rr,s,hexSize)
+				
+				// Terrain
+				var rand = random(100)
+				if (rand >= 0 && rand <= 9) { hex.terrain = "Wasteland" }
+				if (rand >= 10 && rand <= 20) { hex.terrain = "Desert" }
+				
+				
 				ds_map_add(layout,string(qq)+","+string(rr),hex)
 				
 				ds_map_add(hex.neighbours,string(qq+1)+","+string(rr),noone)

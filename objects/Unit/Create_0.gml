@@ -3,7 +3,6 @@
 hex = noone
 start_x = x
 start_y = y
-move_point = noone
 selected = false
 moved = false
 move_max = 1
@@ -13,3 +12,7 @@ state = "none"
 player = noone
 valid_hex = noone
 orig_hex = hex
+
+melee_button = instance_create_layer(x,y+30,"Buttons",Button)
+melee_button.text = "Attack"
+melee_button.visible = false

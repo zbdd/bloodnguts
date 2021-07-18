@@ -10,5 +10,6 @@ layout = noone
 //colour = make_color_rgb(random(255),random(255),random(255))
 default_colour = c_white
 colour = default_colour
-
 items_on_hex = ds_list_create()
+
+terrain = "Grassland"

@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 for(var xx=0; xx<ds_list_size(list)-1;xx++){
+	if(terrain == "Desert") colour = c_yellow
+	if(terrain == "Wasteland") colour = c_orange
+	
 	draw_set_color(colour)
 	draw_triangle(x,
 	y,
