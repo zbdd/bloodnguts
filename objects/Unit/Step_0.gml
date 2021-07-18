@@ -18,11 +18,10 @@ if (mouse_check_button_released(mb_left) && instance_position(mouse_x,mouse_y,se
 	
 	next_hex = find_hex_at_point()
 	if (next_hex) {
-		if (hex_distance(hex,next_hex) <= move_max 
+		if (hex_distance(orig_hex,next_hex) <= move_max 
 			&& can_move
-			&& hex != next_hex) {
+			&& orig_hex != next_hex) {
 			move_to_hex(self,next_hex)
-			can_move = false
 		}
 		else move_to_hex(self,hex)
 	}
@@ -30,14 +29,17 @@ if (mouse_check_button_released(mb_left) && instance_position(mouse_x,mouse_y,se
 }
 
 if(selected > 0) {
-	highlight_hexes_from_origin(hex,move_max)	
+	highlight_hexes_from_origin(orig_hex,move_max)	
 }
 
 if (moving) {
 	x = mouse_x
 	y = mouse_y
-} else {
-	hex = find_hex_at_point()
+}
+
+if (next_turn) { 
+	orig_hex = find_hex_at_point()
+	next_turn = false
 }
 
 /*

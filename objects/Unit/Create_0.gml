@@ -11,6 +11,8 @@ image_index = 2
 state = "none"
 player = noone
 
+next_turn = true
+
 
 melee_button = instance_create_layer(x,y+30,"Buttons",Button)
 melee_button.text = "Attack"
