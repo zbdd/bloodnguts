@@ -5,3 +5,4 @@ colour = make_color_rgb(random(255),random(255),random(255))
 name = "Default"
 food = 10
 water = 10
+events = ds_list_create()

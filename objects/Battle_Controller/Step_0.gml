@@ -29,6 +29,7 @@ if (new_turn) {
 			for(var xx=0;xx<ds_list_size(player_1.units);xx++) {
 				var unit = 	player_1.units[| xx]
 				if (unit.state != "can_move") unit.state = "can_move"
+				unit.next_turn = true
 			}
 		}
 	}
@@ -37,6 +38,7 @@ if (new_turn) {
 		
 		for(var xx=0;xx<ds_list_size(player_1.units);xx++) {
 			var unit = 	player_1.units[| xx]
+			unit.next_turn = true
 			if (unit.state != "can_move") unit.state = "can_move"
 		}
 		

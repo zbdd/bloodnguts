@@ -12,7 +12,7 @@ turn_button.text = "End Deployment"
 player_1 = noone
 player_2 = noone
 
-turn = -1
+turn = 1
 new_turn = false
 
 state = "waiting"

@@ -37,7 +37,14 @@ if (moving) {
 	y = mouse_y
 }
 
-if (next_turn) { 
+if (next_turn) {
+	show_debug_message("turn: " + string(turn))
+	turn++
+	if (orig_hex) {
+		show_debug_message("test")
+		var log = string(name) + " moved to " + string(orig_hex.q) + "," + string(orig_hex.r)
+		if(hex != orig_hex) ds_list_add(player.events,log)
+	}
 	orig_hex = find_hex_at_point()
 	next_turn = false
 }
