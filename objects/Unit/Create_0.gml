@@ -3,7 +3,8 @@
 hex = noone
 start_x = x
 start_y = y
-selected = false
+moving = false
+selected = -1
 moved = false
 move_max = 1
 image_speed = 0

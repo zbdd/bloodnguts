@@ -3,3 +3,5 @@
 units = ds_list_create()
 colour = make_color_rgb(random(255),random(255),random(255))
 name = "Default"
+food = 10
+water = 10
