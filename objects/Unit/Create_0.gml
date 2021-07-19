@@ -14,9 +14,16 @@ state = "none"
 player = noone
 
 next_turn = true
+next_action = noone
 
 melee_button = instance_create_layer(x,y+30,"Buttons",Button)
 melee_button.text = "Attack"
 melee_button.visible = false
+
+scavange_button = instance_create_layer(x,y+30,"Buttons",Button)
+scavange_button.text = "Scavange"
+scavange_button.visible = false
+
+scavange = noone
 
 turn = 0

@@ -13,3 +13,5 @@ colour = default_colour
 items_on_hex = ds_list_create()
 
 terrain = "Grassland"
+
+alarm[0] = 10
