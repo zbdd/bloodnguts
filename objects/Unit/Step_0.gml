@@ -3,7 +3,19 @@
 image_blend = player.colour
 
 if (mouse_check_button_pressed(mb_left) && instance_position(mouse_x,mouse_y,self)) {
-	selected = 1	
+	selected = 1
+	with (global.Mouse) {
+		
+		if (ds_list_find_index(selected,other) == -1) {
+		
+			for(var xx=0;xx<ds_list_size(selected);xx++) {
+				var selectable = selected[| xx]
+				selectable.selected = 0
+			}
+			ds_list_clear(selected)
+			ds_list_add(selected,other)
+		}
+	}
 }
 
 if (mouse_check_button(mb_left) && instance_position(mouse_x,mouse_y,self)) {
@@ -12,7 +24,7 @@ if (mouse_check_button(mb_left) && instance_position(mouse_x,mouse_y,self)) {
 	if (selected > 10) moving = true
 }
 
-if (mouse_check_button_released(mb_left) && instance_position(mouse_x,mouse_y,self)) {
+if (mouse_check_button_released(mb_left) && instance_position(mouse_x,mouse_y,self) && moving) {
 	selected = 0
 	moving = false
 	
@@ -29,7 +41,7 @@ if (mouse_check_button_released(mb_left) && instance_position(mouse_x,mouse_y,se
 }
 
 if(selected > 0) {
-	highlight_hexes_from_origin(orig_hex,move_max)	
+	highlight_hexes_from_origin(orig_hex,move_max)
 }
 
 if (moving) {

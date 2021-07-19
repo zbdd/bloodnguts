@@ -8,6 +8,7 @@
     {"id":{"name":"get_random_hex","path":"scripts/get_random_hex/get_random_hex.yy",},"order":20,},
     {"id":{"name":"init_battle","path":"scripts/init_battle/init_battle.yy",},"order":18,},
     {"id":{"name":"HumanSprite","path":"sprites/HumanSprite/HumanSprite.yy",},"order":0,},
+    {"id":{"name":"Selected_Sprite","path":"sprites/Selected_Sprite/Selected_Sprite.yy",},"order":4,},
     {"id":{"name":"Mouse","path":"objects/Mouse/Mouse.yy",},"order":3,},
     {"id":{"name":"move_to_hex","path":"scripts/move_to_hex/move_to_hex.yy",},"order":13,},
     {"id":{"name":"hex_distance","path":"scripts/hex_distance/hex_distance.yy",},"order":5,},
