@@ -20,10 +20,11 @@ melee_button = instance_create_layer(x,y+30,"Buttons",Button)
 melee_button.text = "Attack"
 melee_button.visible = false
 
-scavange_button = instance_create_layer(x,y+30,"Buttons",Button)
-scavange_button.text = "Scavange"
-scavange_button.visible = false
+scavenge_button = instance_create_layer(x,y+40,"Buttons",Button)
+scavenge_button.text = "scavenge"
+scavenge_button.sprite_index = Scavenge_Sprite
+scavenge_button.visible = false
 
-scavange = noone
+scavenge = noone
 
 turn = 0

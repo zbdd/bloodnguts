@@ -1,12 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 image_blend = player.colour
-scavange_button.x = x
-scavange_button.y = y + 30
+scavenge_button.x = x
+scavenge_button.y = y + 30
 
-if (mouse_check_button_pressed(mb_left) && instance_position(mouse_x,mouse_y,scavange_button)) {
+if (scavenge_button.visible && mouse_check_button_pressed(mb_left) && instance_position(mouse_x,mouse_y,scavenge_button)) {
 	next_action = "scavanging"
-	scavange_button.visible = false
+	scavenge_button.visible = false
 }
 
 if (mouse_check_button_pressed(mb_left) && instance_position(mouse_x,mouse_y,self)) {
@@ -50,10 +50,10 @@ if (mouse_check_button_released(mb_left) && instance_position(mouse_x,mouse_y,se
 	
 	if (valid_move) {
 		for(var xx=0;xx<ds_list_size(next_hex.items_on_hex);xx++) {
-			if (next_hex.items_on_hex[| xx].object_index == Item) scavange = next_hex.items_on_hex[| xx]	
+			if (next_hex.items_on_hex[| xx].object_index == Item) scavenge = next_hex.items_on_hex[| xx]	
 		}
 		
-		if(scavange != noone) scavange_button.visible = true
+		if(scavenge != noone) scavenge_button.visible = true
 		
 	}
 }
@@ -78,14 +78,16 @@ if (next_turn) {
 	if (next_action != noone) {
 		ds_list_add(player.events,string(name) + " is " + string(next_action))
 		
-		if(scavange != noone) {
-			if(scavange.name == "Food") {
+		if(scavenge != noone) {
+			if(scavenge.name == "Food") {
 				player.food++
-				ds_list_delete(next_hex.items_on_hex, ds_list_find_index(next_hex.items_on_hex,scavange))
-				with (scavange) { instance_destroy() }
-				scavange = noone
+				ds_list_delete(next_hex.items_on_hex, ds_list_find_index(next_hex.items_on_hex,scavenge))
+				with (scavenge) { instance_destroy() }
+				scavenge = noone
 			}
 		}
+		
+		next_action = noone
 	}
 	
 	orig_hex = find_hex_at_point()

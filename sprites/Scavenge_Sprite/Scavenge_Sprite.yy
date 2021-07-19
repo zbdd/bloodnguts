@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"03f01f4c-6e06-4cf3-8906-6af5e4afa7d5","path":"sprites/Button_Sprite/Button_Sprite.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"03f01f4c-6e06-4cf3-8906-6af5e4afa7d5","path":"sprites/Button_Sprite/Button_Sprite.yy",},"LayerId":{"name":"b14f9313-5804-4bba-becf-77691d7307f8","path":"sprites/Button_Sprite/Button_Sprite.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Button_Sprite","path":"sprites/Button_Sprite/Button_Sprite.yy",},"resourceVersion":"1.0","name":"03f01f4c-6e06-4cf3-8906-6af5e4afa7d5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fba31d5f-0eee-49fb-9cfd-a885cd3b5b60","path":"sprites/Scavenge_Sprite/Scavenge_Sprite.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fba31d5f-0eee-49fb-9cfd-a885cd3b5b60","path":"sprites/Scavenge_Sprite/Scavenge_Sprite.yy",},"LayerId":{"name":"4e9aea93-a66f-453b-84aa-732cd83042df","path":"sprites/Scavenge_Sprite/Scavenge_Sprite.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Scavenge_Sprite","path":"sprites/Scavenge_Sprite/Scavenge_Sprite.yy",},"resourceVersion":"1.0","name":"fba31d5f-0eee-49fb-9cfd-a885cd3b5b60","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Button_Sprite","path":"sprites/Button_Sprite/Button_Sprite.yy",},
+    "spriteId": {"name":"Scavenge_Sprite","path":"sprites/Scavenge_Sprite/Scavenge_Sprite.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"36556195-eafe-4f04-bb78-30256d1b9f8d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"03f01f4c-6e06-4cf3-8906-6af5e4afa7d5","path":"sprites/Button_Sprite/Button_Sprite.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"77ff70a2-7e46-4595-9d3a-83991631cca5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fba31d5f-0eee-49fb-9cfd-a885cd3b5b60","path":"sprites/Scavenge_Sprite/Scavenge_Sprite.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Button_Sprite","path":"sprites/Button_Sprite/Button_Sprite.yy",},
+    "parent": {"name":"Scavenge_Sprite","path":"sprites/Scavenge_Sprite/Scavenge_Sprite.yy",},
     "resourceVersion": "1.3",
-    "name": "Button_Sprite",
+    "name": "Scavenge_Sprite",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b14f9313-5804-4bba-becf-77691d7307f8","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4e9aea93-a66f-453b-84aa-732cd83042df","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Button_Sprite",
+  "name": "Scavenge_Sprite",
   "tags": [],
   "resourceType": "GMSprite",
 }
